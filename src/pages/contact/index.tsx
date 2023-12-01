@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 
-const ContactPage: NextPage = (props)  => {
+const ContactPage: NextPage = ()  => {
 
   return <>
     <h1 className='text-lg'>Content here...</h1>
