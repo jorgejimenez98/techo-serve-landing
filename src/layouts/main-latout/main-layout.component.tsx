@@ -1,17 +1,16 @@
 import React from 'react'
+import { Footer, Header } from '@/components/layouts'
 
 const MainLayout: React.FC<{ children: React.ReactNode }>  = ({ children }) => {
   return (
     <React.Fragment>
-      Header Here...
+      <Header />
 
-      Scroll Top Layouts
-
-      <main>
+      <main className='main-container'>
         {children}
       </main>
 
-      Footer Here...
+      <Footer />
     </React.Fragment>
   )
 }
