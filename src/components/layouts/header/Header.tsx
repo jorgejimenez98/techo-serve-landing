@@ -1,52 +1,33 @@
 import React from 'react'
 
-import { LOGO, SECTION_BACKGROUND } from '@/assets/images'
-import Image from 'next/image'
-import Link from 'next/link'
-
 const Header: React.FC = () => {
 
-  const sectionBackgroundStyle: React.CSSProperties = {
-    background: `url(${SECTION_BACKGROUND})`,
-  }
   return (
-    <div>
-      <nav className='navbar main-container' style={sectionBackgroundStyle}>
+    <header>
+      <nav className='navbar bg-base-100 main-container'>
         <div className='navbar-start'>
           <div className='dropdown'>
-            <label tabIndex={0} className='btn btn-ghost lg:hidden'>
-              <Image
-                src={LOGO}
-                alt='Menu Icon'
-              />
-            </label>
-            <ul
-              tabIndex={0}
-              className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'
-            >
-              <li>Contact</li>
+            <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
+              <svg xmlns='http://www.w3.org/2000/svg' className='h-5 w-5' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M4 6h16M4 12h8m-8 6h16' /></svg>
+            </div>
+            <ul tabIndex={0} className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'>
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
             </ul>
           </div>
-          <Link href={'/'}>
-            <Image
-              src={LOGO}
-              alt='Menu Icon'
-            />
-          </Link>
+          <a className='btn btn-ghost text-xl text-primary'>TechCoServe</a>
         </div>
-
+        <div className='navbar-center hidden lg:flex'>
+          <ul className='menu menu-horizontal px-1'>
+            <li><a>Item 1</a></li>
+            <li><a>Item 2</a></li>
+          </ul>
+        </div>
         <div className='navbar-end'>
-          <div className='hidden lg:flex'>
-            <ul className='menu menu-horizontal px-1'>
-              <li>Contact</li>
-            </ul>
-          </div>
-
-          <li>Contact</li>
+          Language
         </div>
       </nav>
-
-    </div>
+    </header>
   )
 }
 

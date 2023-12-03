@@ -18,7 +18,10 @@ const config: Config = {
         xs: '480px',
         sm: '800px',
         '3xl': '1921px'
-      }
+      },
+      colors: {
+        primary: '#0e2473',
+      },
     },
   },
 
@@ -28,3 +31,4 @@ const config: Config = {
   ],
 }
 export default config
+/* #0e2473 */
