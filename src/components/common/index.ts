@@ -1,2 +1,3 @@
-export { Seo } from './seo.component'
-export { Logo } from './logo.component'
+export { Seo } from './seo'
+export { Logo } from './logo'
+export { LanguageSelector } from './language-selector'

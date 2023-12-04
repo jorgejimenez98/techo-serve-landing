@@ -2,6 +2,7 @@ import '@/assets/scss/main.scss'
 import { MainLayout } from '@/layouts'
 import type { AppProps } from 'next/app'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { appWithTranslation } from 'next-i18next'
 
 const queryClient = new QueryClient()
 
@@ -15,4 +16,4 @@ const TechoServeApp = ({ Component, pageProps }: AppProps) => {
   )
 }
 
-export default TechoServeApp
+export default appWithTranslation(TechoServeApp)

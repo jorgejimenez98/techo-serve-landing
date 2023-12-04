@@ -3,8 +3,11 @@ import { Link, Menu } from '@/components/ui'
 import { PAGE_CONSTANTS } from '@/lib/constants'
 import { Sidebar } from './Sidebar'
 import { HEADER_ITEMS } from './header.items'
+import { useTranslation } from 'next-i18next'
+import { LanguageSelector } from '@/components/common'
 
 const Header: React.FC = () => {
+  const { t } = useTranslation()
 
   return (
     <header className='app-header'>
@@ -24,10 +27,10 @@ const Header: React.FC = () => {
             direction='horizontal'
             size='lg'
             displayIcon={false}
-            items={HEADER_ITEMS()}
+            items={HEADER_ITEMS(t)}
           />
 
-          Language
+          <LanguageSelector />
         </div>
       </nav>
     </header>

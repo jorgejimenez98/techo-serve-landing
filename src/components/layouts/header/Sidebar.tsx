@@ -2,8 +2,11 @@ import React from 'react'
 import { Icon, Menu } from '@/components/ui'
 import { HEADER_ITEMS } from './header.items'
 import { Logo } from '@/components/common'
+import { useTranslation } from 'next-i18next'
 
 export const Sidebar: React.FC = () => {
+  const { t } = useTranslation()
+
   return (
     <div className='drawer lg:hidden'>
       {/* Hidden Drawer */}
@@ -34,7 +37,7 @@ export const Sidebar: React.FC = () => {
 
           <Menu
             direction='vertical'
-            items={HEADER_ITEMS()}
+            items={HEADER_ITEMS(t)}
           />
         </div>
 

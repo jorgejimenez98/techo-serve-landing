@@ -1,18 +1,24 @@
 import React from 'react'
 import { Logo } from '@/components/common'
-import { PAGE_CONSTANTS } from '@/lib/constants'
 import { Text } from '@/components/ui'
+import { useTranslation } from 'next-i18next'
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation()
+
   return (
     <footer className='p-10 text-base-content'>
       <div className='footer main-container'>
         <aside>
           <Logo align='start' />
-          <Text type='muted'>{PAGE_CONSTANTS.COPYRIGTH_TEXT}</Text>
+          <Text type='muted'>
+            {t('Footer.Text', { year: new Date().getFullYear() })}
+          </Text>
         </aside>
         <nav>
-          <header className='footer-title'>Services</header>
+          <header className='footer-title'>
+            {t('Footer.Services')}
+          </header>
           <a className='link link-hover'>
             <Text type='destructive'>Lorem ipsum</Text>
           </a>
@@ -24,7 +30,9 @@ const Footer: React.FC = () => {
           </a>
         </nav>
         <nav>
-          <header className='footer-title'>Company</header>
+          <header className='footer-title'>
+            {t('Footer.Links')}
+          </header>
           <a className='link link-hover'>
             <Text type='destructive'>Lorem ipsum</Text>
           </a>
@@ -36,7 +44,9 @@ const Footer: React.FC = () => {
           </a>
         </nav>
         <nav>
-          <header className='footer-title'>Legal</header>
+          <header className='footer-title'>
+            {t('Footer.Legal')}
+          </header>
           <a className='link link-hover'>
             <Text type='destructive'>Lorem ipsum</Text>
           </a>

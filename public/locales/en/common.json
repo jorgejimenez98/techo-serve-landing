@@ -1,0 +1,13 @@
+{
+  "Header": {
+    "Contact": "Contact us",
+    "AboutUs": "About us",
+    "Services": "Services"
+  },
+  "Footer": {
+    "Services": "Services",
+    "Links": "Links",
+    "Legal": "Legal",
+    "Text": "© ${{ year }} TechCoServe: All Rigths reserved"
+  }
+}
