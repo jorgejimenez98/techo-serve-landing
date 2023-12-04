@@ -1,29 +1,32 @@
 import React from 'react'
+import { Link, Menu } from '@/components/ui'
+import { PAGE_CONSTANTS } from '@/lib/constants'
+import { Sidebar } from './Sidebar'
+import { HEADER_ITEMS } from './header.items'
 
 const Header: React.FC = () => {
 
   return (
-    <header className='app-header sticky top-0'>
+    <header className='app-header'>
       <nav className='navbar main-container relative'>
         <div className='navbar-start'>
-          <div className='dropdown'>
-            <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
-              <svg xmlns='http://www.w3.org/2000/svg' className='h-5 w-5' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M4 6h16M4 12h8m-8 6h16' /></svg>
-            </div>
-            <ul tabIndex={0} className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'>
-              <li><a>Item 1</a></li>
-              <li><a>Item 2</a></li>
-            </ul>
-          </div>
-          <a className='btn btn-ghost text-xl text-primary'>TechCoServe</a>
+          {/* Mobile Sidebar */}
+          <Sidebar />
+
+          <Link to={'/'} size='xl' type='primary' weigth='extrabold' className='btn btn-ghost'>
+            {PAGE_CONSTANTS.APP_NAME}
+          </Link>
         </div>
-        <div className='navbar-center hidden lg:flex'>
-          <ul className='menu menu-horizontal px-1'>
-            <li><a>Item 1</a></li>
-            <li><a>Item 2</a></li>
-          </ul>
-        </div>
+
         <div className='navbar-end'>
+          <Menu
+            className='hidden lg:flex mr-10'
+            direction='horizontal'
+            size='lg'
+            displayIcon={false}
+            items={HEADER_ITEMS()}
+          />
+
           Language
         </div>
       </nav>

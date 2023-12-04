@@ -3,9 +3,24 @@ import { Flex } from '../layouts'
 import { Text } from '@/components/ui'
 import { PAGE_CONSTANTS } from '@/lib/constants'
 
-const Logo: React.FC<{ align?: 'center' | 'start' }> = ({ align = 'center' }) => {
+interface LogoProps {
+  align?: 'center' | 'start'
+  showDescription?: boolean
+  className?: string
+}
+
+const Logo: React.FC<LogoProps> = ({
+  align = 'center',
+  showDescription = true,
+  className,
+}) => {
   return (
-    <Flex direction='column' justify='center' items={align}>
+    <Flex
+      direction='column'
+      justify='center'
+      items={align}
+      className={className}
+    >
       <Text
         variant='h1'
         type='primary'
@@ -13,14 +28,16 @@ const Logo: React.FC<{ align?: 'center' | 'start' }> = ({ align = 'center' }) =>
       >
         {PAGE_CONSTANTS.APP_NAME}
       </Text>
-      <Text
-        size='xl'
-        type='muted'
-        weigth='bold'
-        italic
-      >
-        {PAGE_CONSTANTS.COMPANY_FULL_NAME}
-      </Text>
+      {showDescription && (
+        <Text
+          size='xl'
+          type='muted'
+          weigth='bold'
+          italic
+        >
+          {PAGE_CONSTANTS.COMPANY_FULL_NAME}
+        </Text>
+      )}
     </Flex>
   )
 }

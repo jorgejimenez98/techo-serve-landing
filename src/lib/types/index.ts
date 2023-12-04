@@ -1,1 +1,1 @@
-export type { ICON } from './icons'
+export type { ICON } from './icons.types'
