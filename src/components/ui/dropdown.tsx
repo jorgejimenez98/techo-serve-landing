@@ -88,7 +88,7 @@ const Dropdown: React.FC<DropdownProps> = ({
 
       {/* List */}
       {children ? children : (
-        <ul tabIndex={0} className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52'>
+        <ul tabIndex={0} className='dropdown-content menu p-2 shadow bg-base-100 rounded-box'>
           {options?.map(option => (
             <li
               key={option.id}

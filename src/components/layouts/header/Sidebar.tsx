@@ -32,7 +32,7 @@ export const Sidebar: React.FC = () => {
         />
 
         {/* Sidebar content here */}
-        <div className='bg-base-200 min-h-full p-4'>
+        <div className='bg-app-ligth min-h-full p-4'>
           <Logo align='start' showDescription={false} className='mb-3' />
 
           <Menu
