@@ -8,7 +8,7 @@ export const Sidebar: React.FC = () => {
   const { t } = useTranslation()
 
   return (
-    <div className='drawer lg:hidden'>
+    <div className='drawer lg:hidden z-50'>
       {/* Hidden Drawer */}
       <input
         id='my-drawer'
