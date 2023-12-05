@@ -1,10 +1,30 @@
 import React from 'react'
-import { Logo } from '@/components/common'
-import { Text } from '@/components/ui'
 import { useTranslation } from 'next-i18next'
+import { Link, Text } from '@/components/ui'
+import { Logo, SocialMedia } from '@/components/common'
+import { PAGE_URLS } from '@/lib/constants'
 
 const Footer: React.FC = () => {
   const { t } = useTranslation()
+
+  const navs = [
+    {
+      title: t('Footer.Company'),
+      links: [
+        { url: PAGE_URLS.ABOUT_US, text: t('Footer.WhatWeDo') },
+        { url: '#', text: 'Lorem ipsum' },
+        { url: '#', text: 'Lorem ipsum' }
+      ]
+    },
+    {
+      title: t('Footer.Links'),
+      links: [
+        { url: PAGE_URLS.CONTACT, text: t('Header.Contact') },
+        { url: PAGE_URLS.COOKIES_POLICY, text: t('Footer.Cookies') },
+        { url: PAGE_URLS.TERMS_POLICY, text: t('Footer.Terms') }
+      ]
+    }
+  ]
 
   return (
     <footer className='p-10 text-base-content'>
@@ -15,48 +35,29 @@ const Footer: React.FC = () => {
             {t('Footer.Text', { year: new Date().getFullYear() })}
           </Text>
         </aside>
-        <nav>
-          <header className='footer-title'>
-            {t('Footer.Services')}
-          </header>
-          <a className='link link-hover'>
-            <Text type='destructive'>Lorem ipsum</Text>
-          </a>
-          <a className='link link-hover'>
-            <Text type='destructive'>Lorem ipsum</Text>
-          </a>
-          <a className='link link-hover'>
-            <Text type='destructive'>Lorem ipsum</Text>
-          </a>
-        </nav>
-        <nav>
-          <header className='footer-title'>
-            {t('Footer.Links')}
-          </header>
-          <a className='link link-hover'>
-            <Text type='destructive'>Lorem ipsum</Text>
-          </a>
-          <a className='link link-hover'>
-            <Text type='destructive'>Lorem ipsum</Text>
-          </a>
-          <a className='link link-hover'>
-            <Text type='destructive'>Lorem ipsum</Text>
-          </a>
-        </nav>
-        <nav>
-          <header className='footer-title'>
-            {t('Footer.Legal')}
-          </header>
-          <a className='link link-hover'>
-            <Text type='destructive'>Lorem ipsum</Text>
-          </a>
-          <a className='link link-hover'>
-            <Text type='destructive'>Lorem ipsum</Text>
-          </a>
-          <a className='link link-hover'>
-            <Text type='destructive'>Lorem ipsum</Text>
-          </a>
-        </nav>
+
+        {/* Navs */}
+        {navs.map((nav, index) => (
+          <div key={index}>
+            <div className='footer-title'>
+              {nav.title}
+            </div>
+
+            {/* Links */}
+            {nav.links.map((link, idx) => (
+              <Link
+                className='link link-hover'
+                key={idx}
+                to={link.url}
+              >
+                {link.text}
+              </Link>
+            ))}
+          </div>
+        ))}
+
+        {/* Social Media */}
+        <SocialMedia />
       </div>
     </footer>
   )

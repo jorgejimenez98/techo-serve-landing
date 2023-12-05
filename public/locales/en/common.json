@@ -6,8 +6,12 @@
   },
   "Footer": {
     "Services": "Services",
+    "Company": "Company",
     "Links": "Links",
     "Legal": "Legal",
-    "Text": "© ${{ year }} TechCoServe: All Rigths reserved"
+    "WhatWeDo": "What do we do?",
+    "Cookies": "Cookies policy",
+    "Terms": "Privacy Policy",
+    "Text": "© {{ year }} TechCoServe: All Rigths reserved"
   }
 }
