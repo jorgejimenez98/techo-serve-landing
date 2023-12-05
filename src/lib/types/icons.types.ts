@@ -3,4 +3,5 @@ export type ICON =
   'menu' |
   'mail_outline' |
   'info' |
-  'build'
+  'build' |
+  'arrow_back'

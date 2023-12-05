@@ -4,6 +4,12 @@
     "AboutUs": "About us",
     "Services": "Services"
   },
+  "404": {
+    "Title": "404 Not found",
+    "Subtitle": "Page Not Found",
+    "Description": "Sorry, the page you are looking for could not be found.",
+    "Back": "Return Home"
+  },
   "Footer": {
     "Services": "Services",
     "Company": "Company",
