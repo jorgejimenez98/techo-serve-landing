@@ -92,7 +92,7 @@ const Dropdown: React.FC<DropdownProps> = ({
           {options?.map(option => (
             <li
               key={option.id}
-              className={`${option.id === value && 'active'} cursor-pointer`}
+              className={`${option.id === value ? 'active' : ''} cursor-pointer`}
               onClick={() => handleOptionClick(option.id)}
             >
               {dropdownItem(option)}

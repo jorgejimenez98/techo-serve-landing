@@ -20,9 +20,13 @@ const config: Config = {
         '3xl': '1921px'
       },
       colors: {
-        primary: '#0e2473',
+        primary: '#004d80',
       },
     },
+  },
+
+  daisyui: {
+    themes: ['light'],
   },
 
   plugins: [
@@ -31,4 +35,3 @@ const config: Config = {
   ],
 }
 export default config
-/* #0e2473 */

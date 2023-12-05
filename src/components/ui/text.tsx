@@ -22,7 +22,7 @@ export const textVariants = cva(
         secondary: 'text-secondary',
         destructive: 'text-destructive',
         foreground: 'text-foreground',
-        muted: 'opacity-50'
+        muted: 'opacity-75'
       },
       variant: {
         span: '',
@@ -74,7 +74,7 @@ const Text: React.FC<TextProps> = ({
       className={cn(
         textVariants({ size, type, variant }),
         italic ? 'italic' : '',
-        className,
+        className
       )}
       {...restProps}
     >

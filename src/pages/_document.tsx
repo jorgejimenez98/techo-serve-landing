@@ -5,11 +5,12 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function MyDocument() {
 
   return (
-    <Html>
+    <Html lang='en' data-theme='light'>
       <Head>
         {/* Standar Meta Tags */}
         <meta charSet='UTF-8' />
-        <meta name='theme-color' content='#0e2473' />
+        <meta name='theme-color' content='#004d80' />
+        <meta name='color-scheme' content='light' />
         <link rel='icon' href='/images/favicon.ico' />
         <link rel='shortcut icon' href='/images/favicon.ico' />
 
