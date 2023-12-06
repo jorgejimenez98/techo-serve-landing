@@ -63,7 +63,6 @@ const Dropdown: React.FC<DropdownProps> = ({
         <Image
           width={30}
           height={30}
-          objectFit='cover'
           className='mt-1 rounded-sm'
           src={item?.image}
           alt={`image-${item?.id}`}

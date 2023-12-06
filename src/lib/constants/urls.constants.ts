@@ -3,5 +3,5 @@ export const PAGE_URLS = {
   ABOUT_US: '/about-us',
   CONTACT: '#contact',
   COOKIES_POLICY: '/policies/cookies',
-  TERMS_POLICY: '/policies/temrs'
+  TERMS_POLICY: '/policies/terms'
 }
