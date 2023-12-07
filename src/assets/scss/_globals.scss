@@ -43,6 +43,11 @@ footer {
   width: 100%;
 }
 
+.global-mask {
+  background-color: #fafafa;
+  background: linear-gradient(100.6deg, rgba(192, 192, 192, 0) 20.79%, rgba(192, 192, 192, 0.26) 40.92%, rgba(192, 192, 192, 0) 70.35%);
+}
+
 /* Tool bar */
 ::-webkit-scrollbar {
   width: 0.4em;

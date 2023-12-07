@@ -1,17 +1,22 @@
-import { Flex } from '@/components/layouts'
+import React from 'react'
 import { GetStaticProps, NextPage } from 'next'
 import { i18n } from 'next-i18next'
 import { isLocal } from '@/lib/utils'
-import { Logo, Seo } from '@/components/common'
+import { sections } from '@/containers'
+import { Seo } from '@/components/common'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const HomePage: NextPage = ()  => {
 
   return <>
     <Seo />
-    <Flex direction='column' justify='center' items='center' style={{ height: '600px' }}>
-      <Logo align='center'/>
-    </Flex>
+
+    {/* Sections */}
+    {sections?.map((sectionComponent, idx) => (
+      <section key={idx}>
+        {React.createElement(sectionComponent)}
+      </section>
+    ))}
   </>
 }
 

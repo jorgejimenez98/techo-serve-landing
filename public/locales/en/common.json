@@ -10,6 +10,10 @@
     "Description": "Sorry, the page you are looking for could not be found.",
     "Back": "Return Home"
   },
+  "Hero": {
+    "Title": "Inspection of Industrial Assets",
+    "Subtitle": "Discover how TechCoServe ensures the integrity of your equipment with specialized inspection services, guaranteeing long-term reliability and durability"
+  },
   "Footer": {
     "Services": "Services",
     "Company": "Company",

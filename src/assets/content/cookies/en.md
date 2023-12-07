@@ -14,4 +14,6 @@ A cookie is a file that is downloaded to your computer when accessing certain we
 
 The user expressly accepts, through the use of this site, the processing of the information collected in the manner and for the purposes mentioned above. Likewise, the user acknowledges knowing the possibility of rejecting the processing of such data or information by rejecting the use of cookies by selecting the appropriate settings in their browser. While this option to block cookies in your browser may not allow you to fully use all the features of the website.
 
-You can allow, block, or delete the cookies installed on your computer by configuring the options of the browser installed on your computer: Chrome, Explorer, Firefox, and Safari.
+You can allow, block, or delete the cookies installed on your computer by configuring the options of the browser installed on your computer:
+
+[Chrome](https://support.google.com/chrome/answer/95647?hl=es), [Explorer](http://windows.microsoft.com/es-es/windows-vista/block-or-allow-cookies), [Firefox](https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we) and [Safari](https://support.apple.com/es-es/guide/safari/sfri11471/mac)

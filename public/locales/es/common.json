@@ -10,6 +10,10 @@
     "Description": "Lo sentimos, no se pudo encontrar la página que estás buscando.",
     "Back": "Volver atrás"
   },
+  "Hero": {
+    "Title": "Inspección de Activos Industriales",
+    "Subtitle": "Descubre como TechCoServe asegura la integridad de tus equipos con servicios especializados en inspección, garantizando confiabilidad y durabilidad a largo plazo"
+  },
   "Footer": {
     "Services": "Servicios",
     "Company": "Compañía",
