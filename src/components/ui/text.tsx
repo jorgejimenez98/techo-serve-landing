@@ -22,16 +22,8 @@ export const textVariants = cva(
         secondary: 'text-secondary',
         destructive: 'text-destructive',
         foreground: 'text-foreground',
+        error: 'text-error',
         muted: 'opacity-75'
-      },
-      variant: {
-        span: '',
-        h1: 'text-4xl',
-        h2: 'text-3xl',
-        h3: 'text-2xl',
-        h4: 'text-xl',
-        h5: 'text-lg',
-        h6: 'text-base',
       },
       weigth: {
         light: 'font-light',
@@ -45,17 +37,18 @@ export const textVariants = cva(
     defaultVariants: {
       size: 'base',
       type: 'primary',
-      variant: 'span',
       weigth: 'normal'
     },
   }
 )
 
-export interface TextProps
-  extends VariantProps<typeof textVariants>,
-  React.HTMLAttributes<HTMLDivElement> {
+export type TextVariant = 'p' | 'label' | 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+
+export interface TextProps extends VariantProps<typeof textVariants> {
     children: React.ReactNode,
     italic?: boolean
+    variant?: TextVariant
+    className?: string
   }
 
 const Text: React.FC<TextProps> = ({
@@ -72,7 +65,7 @@ const Text: React.FC<TextProps> = ({
   return (
     <Element
       className={cn(
-        textVariants({ size, type, variant }),
+        textVariants({ size, type }),
         italic ? 'italic' : '',
         className
       )}

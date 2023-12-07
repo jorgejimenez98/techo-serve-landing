@@ -6,8 +6,10 @@ const MainLayout: React.FC<{ children: React.ReactNode }>  = ({ children }) => {
     <React.Fragment>
       <Header />
 
-      <main className='global-mask main-container'>
-        {children}
+      <main className='global-mask'>
+        <div className='main-container'>
+          {children}
+        </div>
       </main>
 
       <Footer />

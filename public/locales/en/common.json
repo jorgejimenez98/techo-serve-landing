@@ -23,5 +23,9 @@
     "Cookies": "Cookies policy",
     "Terms": "Privacy Policy",
     "Text": "© {{ year }} TechCoServe: All Rigths reserved"
+  },
+  "Validations": {
+    "InvalidEmail": "Invalid Email",
+    "Required": "Field required"
   }
 }
