@@ -1,28 +1,40 @@
 {
-  "Header": {
-    "Contact": "Contact us",
-    "AboutUs": "About us",
-    "Services": "Services"
-  },
   "404": {
-    "Title": "404 Not found",
-    "Subtitle": "Page Not Found",
+    "Back": "Return Home",
     "Description": "Sorry, the page you are looking for could not be found.",
-    "Back": "Return Home"
+    "Subtitle": "Page Not Found",
+    "Title": "404 Not found"
   },
-  "Hero": {
-    "Title": "Inspection of Industrial Assets",
-    "Subtitle": "Discover how TechCoServe ensures the integrity of your equipment with specialized inspection services, guaranteeing long-term reliability and durability"
+  "Contact": {
+    "Contact": "Contact",
+    "Email": "Email",
+    "EmailPlaceholder": "Enter your email...",
+    "Message": "Message",
+    "MessagePlaceholder": "Enter your message...",
+    "Name": "Name",
+    "NamePlaceholder": "Enter your name...",
+    "Send": "Send email",
+    "Subtitle": "Use this form to contact TechCoserve and send us any questions or suggestions. We will respond within the next 24 hours",
+    "Title": "Do you have any questions?"
   },
   "Footer": {
-    "Services": "Services",
     "Company": "Company",
-    "Links": "Links",
-    "Legal": "Legal",
-    "WhatWeDo": "What do we do?",
     "Cookies": "Cookies policy",
+    "Legal": "Legal",
+    "Links": "Links",
+    "Services": "Services",
     "Terms": "Privacy Policy",
-    "Text": "© {{ year }} TechCoServe: All Rigths reserved"
+    "Text": "© {{ year }} TechCoServe: All Rigths reserved",
+    "WhatWeDo": "What do we do?"
+  },
+  "Header": {
+    "AboutUs": "About us",
+    "Contact": "Contact us",
+    "Services": "Services"
+  },
+  "Hero": {
+    "Subtitle": "Discover how TechCoServe ensures the integrity of your equipment with specialized inspection services, guaranteeing long-term reliability and durability",
+    "Title": "Inspection of Industrial Assets"
   },
   "Validations": {
     "InvalidEmail": "Invalid Email",

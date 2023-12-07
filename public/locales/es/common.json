@@ -1,28 +1,40 @@
 {
-  "Header": {
-    "Contact": "Contáctanos",
-    "AboutUs": "Sobre nosotros",
-    "Services": "Servicios"
-  },
   "404": {
-    "Title": "404 No encontrado",
-    "Subtitle": "Página no encontrada",
+    "Back": "Volver atrás",
     "Description": "Lo sentimos, no se pudo encontrar la página que estás buscando.",
-    "Back": "Volver atrás"
+    "Subtitle": "Página no encontrada",
+    "Title": "404 No encontrado"
   },
-  "Hero": {
-    "Title": "Inspección de Activos Industriales",
-    "Subtitle": "Descubre como TechCoServe asegura la integridad de tus equipos con servicios especializados en inspección, garantizando confiabilidad y durabilidad a largo plazo"
+  "Contact": {
+    "Contact": "Contacto",
+    "Email": "Correo electrónico",
+    "EmailPlaceholder": "Escriba su correo...",
+    "Message": "Message",
+    "MessagePlaceholder": "Escriba su mensaje...",
+    "Name": "Nombre",
+    "NamePlaceholder": "Escriba su nombre...",
+    "Send": "Send email",
+    "Subtitle": "Utiliza este formulario para contactar con TechCoserve y hacernos llegar cualquier duda o sugerencia. Te responderemos en las próximas 24 horas",
+    "Title": "¿Tienes alguna pregunta?"
   },
   "Footer": {
-    "Services": "Servicios",
     "Company": "Compañía",
-    "Links": "Enlaces",
-    "Legal": "Legal",
-    "WhatWeDo": "¿Qué hacemos?",
     "Cookies": "Política de cookies",
+    "Legal": "Legal",
+    "Links": "Enlaces",
+    "Services": "Servicios",
     "Terms": "Política de privacidad",
-    "Text": "© {{ year }} TechCoServe: Todos los derechos reservados"
+    "Text": "© {{ year }} TechCoServe: Todos los derechos reservados",
+    "WhatWeDo": "¿Qué hacemos?"
+  },
+  "Header": {
+    "AboutUs": "Sobre nosotros",
+    "Contact": "Contáctanos",
+    "Services": "Servicios"
+  },
+  "Hero": {
+    "Subtitle": "Descubre como TechCoServe asegura la integridad de tus equipos con servicios especializados en inspección, garantizando confiabilidad y durabilidad a largo plazo",
+    "Title": "Inspección de Activos Industriales"
   },
   "Validations": {
     "InvalidEmail": "Correo no válido",

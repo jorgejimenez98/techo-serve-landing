@@ -1,12 +1,13 @@
 import React from 'react'
 import { GetStaticProps, NextPage } from 'next'
 import { i18n, useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+import { Card, Text } from '@/components/ui'
+import { ContactForm } from '@/containers/forms'
+import { Flex } from '@/components/layouts'
 import { isLocal } from '@/lib/utils'
 import { Seo } from '@/components/common'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { Card, Text } from '@/components/ui'
-import { Flex } from '@/components/layouts'
-import { ContactForm } from '@/containers/forms'
 
 const ContactPage: NextPage = ()  => {
   const { t } = useTranslation()
@@ -19,15 +20,15 @@ const ContactPage: NextPage = ()  => {
         {/* Title */}
         <Flex justify='center' items='center' direction='column' className='gap-2 mb-5'>
           <Text type='muted' size='xl' className='uppercase'>
-            {t('Contact')}
+            {t('Contact.Contact')}
           </Text>
 
           <Text size='3xl' variant='h3' weigth='bold' className='text-center lg:text-start'>
-            {t('Have any questions?')}
+            {t('Contact.Title')}
           </Text>
 
           <Text size='lg' variant='h4' className='text-center lg:text-start mt-4'>
-            {t('Utiliza este formulario para contactar con TechCoserve y hacernos llegar cualquier duda o sugerencia. Te responderemos en las próximas 24 horas')}
+            {t('Contact.Subtitle')}
           </Text>
         </Flex>
 
