@@ -21,9 +21,9 @@ const Header: React.FC = () => {
           </Link>
         </div>
 
-        <div className='navbar-end'>
+        <div className='navbar-end w-70-p'>
           <Menu
-            className='hidden lg:flex mr-10'
+            className='hidden lg:flex'
             direction='horizontal'
             size='lg'
             displayIcon={false}
