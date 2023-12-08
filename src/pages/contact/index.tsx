@@ -15,8 +15,8 @@ const ContactPage: NextPage = ()  => {
   return <>
     <Seo title={t('Header.Contact')} />
 
-    <Flex className='lg:mx-20 fade'>
-      <Card className='my-5 ml-5 mr-5 lg:my-20 lg:mx-28'>
+    <Flex className='px-3 py-5 lg:p-10 lg:mx-20 fade' direction='column' justify='center'>
+      <Card>
         {/* Title */}
         <Flex justify='center' items='center' direction='column' className='gap-2 mb-5'>
           <Text type='muted' size='xl' className='uppercase'>
@@ -27,7 +27,7 @@ const ContactPage: NextPage = ()  => {
             {t('Contact.Title')}
           </Text>
 
-          <Text size='lg' variant='h4' className='text-center lg:text-start mt-4'>
+          <Text size='lg' variant='h4' className='lg:px-20 text-center mt-4'>
             {t('Contact.Subtitle')}
           </Text>
         </Flex>

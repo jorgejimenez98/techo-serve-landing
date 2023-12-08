@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'next-i18next'
 import { Formik, Form, FormikHelpers } from 'formik'
 
-import { Button } from '@/components/ui'
+import { Button, Divider } from '@/components/ui'
 import { Col, Flex } from '@/components/layouts'
 import { TextAreaInput, TextInput } from '@/components/ui/fieds'
 
@@ -34,6 +34,7 @@ export const ContactForm: React.FC = () => {
             label={t('Contact.Name')}
             placeholder={t('Contact.NamePlaceholder')}
             className='mb-4 lg:mr-2'
+            autoFocus
           />
           <TextInput
             name='email'
@@ -49,6 +50,8 @@ export const ContactForm: React.FC = () => {
           placeholder={t('Contact.MessagePlaceholder')}
           className='mb-4'
         />
+
+        <Divider />
 
         <Flex justify='end'>
           <Button type='submit' icon='mail_outline'>
