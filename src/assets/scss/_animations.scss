@@ -5,3 +5,37 @@
     height: 80px;
   }
 }
+
+/* Up animation */
+.animate-up {
+  animation: animateUp ease 0.5s;
+}
+
+@keyframes animateUp {
+  0% {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+
+// Fade in animation
+
+.fade {
+  animation: fade-animation ease 0.5s;
+}
+
+@keyframes fade-animation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}

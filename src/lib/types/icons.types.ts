@@ -1,12 +1,13 @@
 export type ICON =
-  'person' |
-  'menu' |
-  'mail_outline' |
-  'info' |
-  'build' |
   'arrow_back' |
-  'visibility' |
-  'gesture' |
+  'arrow_upward' |
+  'build' |
+  'build' |
   'find_replace' |
+  'gesture' |
+  'info' |
+  'mail_outline' |
+  'menu' |
+  'person' |
   'search' |
-  'build'
+  'visibility'

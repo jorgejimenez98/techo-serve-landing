@@ -13,7 +13,7 @@ const HomePage: NextPage = ()  => {
 
     {/* Sections */}
     {sections?.map((sectionComponent, idx) => (
-      <section key={idx}>
+      <section key={idx} className='fade'>
         {React.createElement(sectionComponent)}
       </section>
     ))}
