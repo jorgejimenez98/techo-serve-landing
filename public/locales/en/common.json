@@ -36,6 +36,22 @@
     "Subtitle": "Discover how TechCoServe ensures the integrity of your equipment with specialized inspection services, guaranteeing long-term reliability and durability",
     "Title": "Inspection of Industrial Assets"
   },
+  "Services": {
+    "Contact": "If you are looking for trusted inspection services and integrity solutions for your equipment, contact us today! We are here to provide the support your company needs.",
+    "ContactUs": "Contact Us",
+    "Item1Description": "We conduct comprehensive visual inspections to ensure the quality and functionality of your equipment and components.",
+    "Item1Title": "Visual Inspections of Equipment and Components",
+    "Item2Description": "We offer non-destructive testing services to assess the integrity of materials without compromising their structure.",
+    "Item2Title": "Non-Destructive Testing",
+    "Item3Description": "Our team conducts detailed corrosion analysis and studies to understand and mitigate the effects of deterioration in your facilities.",
+    "Item3Title": "Corrosion Analysis and Studies",
+    "Item4Description": "We perform thorough inspections to assess the condition of your equipment and components.",
+    "Item4Title": "Inspection and Condition Assessment",
+    "Item5Description": "We are committed to ensuring the mechanical integrity and reliability of your assets.",
+    "Item5Title": "Mechanical Integrity and Reliability Services",
+    "Subtitle": "Discover how Technology and Corrosion Services Europe S.L. can protect the integrity and reliability of your industrial assets with our specialized services!",
+    "Title": "Services"
+  },
   "Validations": {
     "InvalidEmail": "Invalid Email",
     "Required": "Field required"

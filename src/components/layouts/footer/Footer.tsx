@@ -11,9 +11,8 @@ const Footer: React.FC = () => {
     {
       title: t('Footer.Company'),
       links: [
-        { url: PAGE_URLS.ABOUT_US, text: t('Footer.WhatWeDo') },
-        { url: '#', text: 'Lorem ipsum' },
-        { url: '#', text: 'Lorem ipsum' }
+        { url: PAGE_URLS.SERVICES, text: t('Footer.Services') },
+        { url: PAGE_URLS.ABOUT_US, text: t('Header.AboutUs') },
       ]
     },
     {

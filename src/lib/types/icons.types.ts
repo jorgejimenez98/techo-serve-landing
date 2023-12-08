@@ -4,4 +4,9 @@ export type ICON =
   'mail_outline' |
   'info' |
   'build' |
-  'arrow_back'
+  'arrow_back' |
+  'visibility' |
+  'gesture' |
+  'find_replace' |
+  'search' |
+  'build'

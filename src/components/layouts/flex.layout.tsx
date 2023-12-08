@@ -29,6 +29,7 @@ export const flexVariants = cva(
         noWrap: 'flex-nowrap',
         wrap: 'flex-wrap',
         wrapReverse: 'flex-wrap-reverse',
+        shrink: 'flex-shrink'
       },
     },
     defaultVariants: {
