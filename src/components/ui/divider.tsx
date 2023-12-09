@@ -21,10 +21,16 @@ export const dividerVariants = cva(
         info: 'divider-info',
         error: 'divider-error'
       },
+      position: {
+        'default': '',
+        start: 'divider-start',
+        end: 'divider-end'
+      }
     },
     defaultVariants: {
       direction: 'vertical',
-      type: 'default'
+      type: 'default',
+      position: 'default'
     },
   }
 )
@@ -40,13 +46,14 @@ const Divider: React.FC<DividerProps> = ({
   type,
   children,
   direction,
+  position,
   ...restProps
 }) => {
 
   return (
     <div
       className={cn(
-        dividerVariants({ type, direction }),
+        dividerVariants({ type, direction, position }),
         className,
       )}
       {...restProps}

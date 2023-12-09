@@ -3,10 +3,9 @@ import React from 'react'
 import { useTranslation } from 'next-i18next'
 
 import { Flex } from '@/components/layouts'
-import { Button, Link, Text } from '@/components/ui'
-import { Logo } from '@/components/common'
+import { Text } from '@/components/ui'
+import { ContactButton, Logo } from '@/components/common'
 import { useWindowSize } from '@/hooks'
-import { PAGE_URLS } from '@/lib/constants'
 
 export const HeroSection: React.FC = () => {
   const { isMobile } = useWindowSize()
@@ -35,11 +34,7 @@ export const HeroSection: React.FC = () => {
           />
         </Flex>
 
-        <Link to={PAGE_URLS.CONTACT}>
-          <Button icon='mail_outline' variant='outline'>
-            {t('Services.ContactUs')}
-          </Button>
-        </Link>
+        <ContactButton variant='outline' />
       </Flex>
 
       <Flex>

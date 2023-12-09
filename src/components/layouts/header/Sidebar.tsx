@@ -33,7 +33,7 @@ export const Sidebar: React.FC = () => {
 
         {/* Sidebar content here */}
         <div className='bg-app-ligth min-h-full p-4'>
-          <Logo align='start' showDescription={false} className='mb-3' />
+          <Logo showDescription={false} className='mb-3' />
 
           <Menu
             direction='vertical'

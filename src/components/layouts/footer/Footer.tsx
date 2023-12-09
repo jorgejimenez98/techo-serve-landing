@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
     <footer className='p-10 text-base-content'>
       <div className='footer main-container'>
         <aside>
-          <Logo align='start' />
+          <Logo />
           <Text type='muted'>
             {t('Footer.Text', { year: new Date().getFullYear() })}
           </Text>

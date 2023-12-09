@@ -1,3 +1,5 @@
+export { ContactButton } from './contact-button'
+export { ImageCircle } from './image-circle'
 export { InvisibleLink } from './invisible-link'
 export { LanguageSelector } from './language-selector'
 export { Logo } from './logo'

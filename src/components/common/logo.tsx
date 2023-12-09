@@ -10,7 +10,7 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({
-  align = 'center',
+  align = 'start',
   showDescription = true,
   className,
 }) => {

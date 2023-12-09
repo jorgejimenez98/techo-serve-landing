@@ -16,7 +16,13 @@ const Header: React.FC = () => {
           {/* Mobile Sidebar */}
           <Sidebar />
 
-          <Link to={'/'} size='xl' type='primary' weigth='extrabold' className='btn btn-ghost'>
+          <Link
+            to={'/'}
+            size='xl'
+            type='primary'
+            weigth='extrabold'
+            className='btn btn-ghost ml-5 lg:ml-0'
+          >
             {PAGE_CONSTANTS.APP_NAME}
           </Link>
         </div>

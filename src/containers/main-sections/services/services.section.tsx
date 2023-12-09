@@ -4,10 +4,9 @@ import { useTranslation } from 'next-i18next'
 import ServiceCardItem from './service-card-item'
 
 import { Flex } from '@/components/layouts'
-import { InvisibleLink, Subtitle } from '@/components/common'
+import { ContactButton, InvisibleLink, Subtitle } from '@/components/common'
 import { ServiceItem } from '@/lib/types'
-import { Button, Divider, Link, Text } from '@/components/ui'
-import { PAGE_URLS } from '@/lib/constants'
+import { Divider, Text } from '@/components/ui'
 
 const Services: React.FC = () => {
   const { t } = useTranslation()
@@ -51,11 +50,7 @@ const Services: React.FC = () => {
     <Subtitle text={t('Services.Contact')} />
 
     <Flex justify='center' className='mt-5 mb-10'>
-      <Link to={PAGE_URLS.CONTACT}>
-        <Button icon='mail_outline'>
-          {t('Services.ContactUs')}
-        </Button>
-      </Link>
+      <ContactButton variant='primary' />
     </Flex>
   </>
 }
