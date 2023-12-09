@@ -4,7 +4,7 @@ import { Formik, Form, FormikHelpers } from 'formik'
 
 import { Button, Divider } from '@/components/ui'
 import { Col, Flex } from '@/components/layouts'
-import { TextAreaInput, TextInput } from '@/components/ui/fieds'
+import { TextAreaInput, TextInput } from '@/components/ui/fields'
 
 import { ContactFormPayload } from './contact-form.payload'
 import { initialValues, validationSchema } from './contact-form.schema'
