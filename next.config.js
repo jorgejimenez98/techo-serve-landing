@@ -17,6 +17,10 @@ const nextConfig = {
   },
   sassOptions: {
     includePaths: [path.join(__dirname, 'assets/scss')],
+  },
+  env: {
+    RESEND_EMAIL_API_KEY: process.env.RESEND_EMAIL_API_KEY,
+    RESEND_EMAIL: process.env.RESEND_EMAIL,
   }
 }
 
