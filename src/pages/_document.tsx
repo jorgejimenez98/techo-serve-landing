@@ -1,4 +1,4 @@
-import { PAGE_CONSTANTS } from '@/lib/constants'
+import { PAGE_CONSTANTS, SEO_CONSTANTS } from '@/lib/constants'
 import { Html, Head, Main, NextScript } from 'next/document'
 
 
@@ -11,24 +11,27 @@ export default function MyDocument() {
         <meta charSet='UTF-8' />
         <meta name='theme-color' content='#004d80' />
         <meta name='color-scheme' content='light' />
-        <link rel='icon' href='/images/favicon.ico' />
-        <link rel='shortcut icon' href='/images/favicon.ico' />
+        <link rel='icon' href={SEO_CONSTANTS.FAVICON} />
+        <link rel='shortcut icon' href={SEO_CONSTANTS.FAVICON} />
 
         {/* Page Title and Description */}
         <meta name='title' content={PAGE_CONSTANTS.APP_NAME} />
+        <meta name='description' content={SEO_CONSTANTS.DESCRIPTION} />
 
         {/* Open Graph tags */}
 
         <meta property='og:type' content='website' />
-        <meta property='og:locale' content='en_US' />
-        <meta property='og:url' content='https://techoserve.com' />
-        <meta property='og:title' content='Safeguard Your Industrial Assets with Technology and Corrosion Services Europe S.L.' />
-        <meta property='og:site_name' content='TechCoServe - Industrial Asset Protection' />
-
+        <meta property='og:locale' content='es_ES' />
+        <meta property='og:url' content={SEO_CONSTANTS.DOMAIN} />
+        <meta property='og:title' content={SEO_CONSTANTS.DESCRIPTION} />
+        <meta property='og:site_name' content={PAGE_CONSTANTS.APP_NAME} />
+        <meta property='og:image' content={SEO_CONSTANTS.IMAGE} />
 
         {/* Twitter Card tags */}
         <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:title' content='Technology and Corrosion Services Europe S.L.' />
+        <meta name='twitter:title' content={PAGE_CONSTANTS.APP_NAME} />
+        <meta name='twitter:description' content={SEO_CONSTANTS.DESCRIPTION} />
+        <meta name='twitter:image' content={SEO_CONSTANTS.IMAGE} />
 
       </Head>
       <body>
