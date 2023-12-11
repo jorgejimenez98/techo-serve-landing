@@ -34,6 +34,10 @@
     "Subtitle": "Utiliza este formulario para contactar con TechCoserve y hacernos llegar cualquier duda o sugerencia. Te responderemos en las próximas 24 horas",
     "Title": "¿Tienes alguna pregunta?"
   },
+  "Cookies": {
+    "Accept": "Aceptar",
+    "Text": "Utilizamos cookies para mejorar su experiencia en nuestro sitio. Al utilizar nuestro sitio usted acepta las cookies.. Ver más <a class='hover-transition' href='policies/cookies'><strong>aquí...</strong></a>"
+  },
   "Footer": {
     "Company": "Compañía",
     "Cookies": "Política de cookies",

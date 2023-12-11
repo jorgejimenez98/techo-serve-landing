@@ -7,7 +7,7 @@ import path from 'path'
 import fs from 'fs'
 
 import { MarkdownReader, Seo } from '@/components/common'
-import { getHtmlFromMdFile } from '@/lib/services'
+import { htmlService } from '@/lib/services'
 
 interface PolicyPageProps {
   content: string
@@ -45,7 +45,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query, locale }) 
   const fileDirectory = `src/assets/content/${String(slug)}/${locale}.md`
   const filePath = path.join(process.cwd(), fileDirectory)
   const fileContent = fs.readFileSync(filePath, 'utf8')
-  const content = await getHtmlFromMdFile(fileContent)
+  const content = await htmlService.getHtmlFromMdFile(fileContent)
 
   // Pasar el slug como prop al componente
   return {
