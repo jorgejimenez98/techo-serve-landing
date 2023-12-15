@@ -1,4 +1,5 @@
-import React from 'react'
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
 import { Formik, Form, FormikHelpers } from 'formik'
 
@@ -9,6 +10,7 @@ import { TextAreaInput, TextInput } from '@/components/ui/fields'
 import { ContactFormPayload } from './contact-form.payload'
 import { initialValues, validationSchema } from './contact-form.schema'
 import { useSendEmail } from '@/hooks'
+import toast from 'react-hot-toast'
 
 export const ContactForm: React.FC = () => {
   const { t } = useTranslation()
@@ -28,6 +30,11 @@ export const ContactForm: React.FC = () => {
     sendEmail(payload)
     resetForm()
   }
+
+  useEffect(() => {
+    if (isSuccess) toast.success(t('Correo enviado'))
+    if (isError) toast.error(t('Error al enviar correo'))
+  }, [isSuccess, isError])
 
   return <>
     <Formik

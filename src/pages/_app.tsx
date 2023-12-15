@@ -4,6 +4,7 @@ import type { AppProps } from 'next/app'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { appWithTranslation } from 'next-i18next'
 import { CookiesConsent } from '@/components/common'
+import { Toaster } from 'react-hot-toast'
 
 const queryClient = new QueryClient()
 
@@ -17,6 +18,9 @@ const TechoServeApp = ({ Component, pageProps }: AppProps) => {
 
       {/* Cookies Banner */}
       <CookiesConsent />
+
+      {/* Toaster */}
+      <Toaster />
     </QueryClientProvider>
   )
 }
