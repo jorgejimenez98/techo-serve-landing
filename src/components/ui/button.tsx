@@ -3,7 +3,7 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/services'
 import { ICON } from '@/lib/types'
 import { Icon } from './icon'
-
+import { Spinner } from './spinner'
 
 const buttonVariants = cva(
   `
@@ -40,10 +40,11 @@ export interface ButtonProps
     VariantProps<typeof buttonVariants> {
       icon?: ICON
       children?: React.ReactNode
+      loading?: boolean
   }
 
 const Button: React.FC<ButtonProps> = (props) => {
-  const { className, variant, size, icon, children, ...restProps } = props
+  const { className, variant, size, icon, loading, children, ...restProps } = props
 
   return (
     <button
@@ -53,7 +54,13 @@ const Button: React.FC<ButtonProps> = (props) => {
       )}
       {...restProps}
     >
+      {/* Loader */}
+      {loading && <Spinner />}
+
+      {/* Icon */}
       {icon && <Icon name={icon} />}
+
+      {/* Texts */}
       {children}
     </button>
   )
