@@ -8,16 +8,24 @@ import { TextAreaInput, TextInput } from '@/components/ui/fields'
 
 import { ContactFormPayload } from './contact-form.payload'
 import { initialValues, validationSchema } from './contact-form.schema'
+import { useSendEmail } from '@/hooks'
 
 export const ContactForm: React.FC = () => {
   const { t } = useTranslation()
+
+  /* Email Hook */
+  const {
+    isError,
+    isSuccess,
+    isPending,
+    mutateAsync: sendEmail
+  } = useSendEmail()
 
   const onSubmit = (
     payload: ContactFormPayload,
     { resetForm }: FormikHelpers<ContactFormPayload>
   ) => {
-    // eslint-disable-next-line no-console
-    console.log({ payload })
+    sendEmail(payload)
     resetForm()
   }
 
@@ -54,7 +62,11 @@ export const ContactForm: React.FC = () => {
         <Divider />
 
         <Flex justify='end'>
-          <Button type='submit' icon='mail_outline'>
+          <Button
+            type='submit'
+            icon='mail_outline'
+            loading={isPending}
+          >
             {t('Contact.Send')}
           </Button>
         </Flex>
