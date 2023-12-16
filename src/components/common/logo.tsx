@@ -24,7 +24,7 @@ const Logo: React.FC<LogoProps> = ({
       <Text
         variant='h1'
         type='primary'
-        className='font-bolder uppercase'
+        className='uppercase font-impact bold'
       >
         {PAGE_CONSTANTS.APP_NAME}
       </Text>
@@ -33,6 +33,7 @@ const Logo: React.FC<LogoProps> = ({
           size='xl'
           type='muted'
           weigth='bold'
+          className='font-baskerville italic'
           italic
         >
           {PAGE_CONSTANTS.COMPANY_FULL_NAME}
