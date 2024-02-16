@@ -17,5 +17,3 @@ yarn dev
 ```
 
 Once it's done, it should open port 3000 so you can access through **[`http://localhost:3000`](http://localhost:3000).**
-
-Demo here **[`https://techoserve.com`](https://techoserve.com).**
